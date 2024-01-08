@@ -1,0 +1,35 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Path",
+"class": "PathTracker",
+"language": "GDScript",
+"path": "res://path_tracker.gd"
+}, {
+"base": "ShaderMaterial",
+"class": "VertexSmearMaterial",
+"language": "GDScript",
+"path": "res://vertex_smear_material.gd"
+} ]
+_global_script_class_icons={
+"PathTracker": "",
+"VertexSmearMaterial": ""
+}
+
+[application]
+
+config/name="Vertex Smear"
+run/main_scene="res://vertex_smear_demo.tscn"
+config/icon="res://icon.png"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
